@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap'); 
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.navbar {
+    background-color: black !important;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    max-height: 100px;
+    top: 0;
+}
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+    font-size: 25px;
+    margin-right: 50px;
+}
+.navbar button {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #5800FF;
+    max-width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black !important;
+    border-radius: 10px;
+}
+.navbar .bi-search {
+    color: white;
+}
+.navbar input {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #5800FF;
+    max-width: 500px !important;
+    height: 50px;
+    border-radius: 10px !important;
+    background-color: black !important;
+    border-style: none !important;
+    color: white !important;
+}
+.navbar input::placeholder {
+    color: white;
+}
+
+.slide-show .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+}
+.swiper-slideshow {
+    overflow: hidden;
+}
+.slide-show .swiperSlideshowDesc h1 {
+    font-size: 50px;
+    font-weight: 600 !important;
+    color: white;
+}
+.slide-show .swiperSlideshowDesc p {
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+}
+.slide-show .swiperSlideshowDesc .paragSatu {
+    margin-top: 15px;
+}
+.slide-show .swiperSlideshowDesc .paragDua {
+    margin-top: -20px !important;
+}
+.slide-show .swiperSlideshowDesc .linkSlideshowButton {
+    margin-top: 3em !important;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+    outline-width: 1px;
+    outline-color: #5800FF;
+    outline-style: solid;
+}
+.slide-show .swiperSlideshowDesc a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.popular {
+    margin-top: 150px;
+}
+.swiper-popular {
+    overflow: hidden;
+}
+.swiper-popular h1 {
+    font-weight: 600;
+}
+.swiperSlidePopular {
+    width: 200px;
+    min-height: 400px !important;
+}
+.swiperPopularImg {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiperPopularImg button {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+    border-style: none;
+    background-color: #5800FF;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 5px;
+    color: white;
+}
+.swiperPopularTitle {
+    margin: auto;
+}
+.swiperPopularTitle h3 {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.swiperPopularTitle p {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+.top-airing {
+    margin-top: 150px;
+}
+
+.swiper-top-airing {
+    overflow: hidden;
+}
+
+.recent-released {
+    margin-top: 150px;
+}
+.recent-released .myCard {
+    margin-bottom: 1em;
+}
+
+.movies {
+    margin-top: 150px;
+}
+.swiper-movies {
+    overflow: hidden;
+}
+
+.recent-released-genre h4 {
+    color: white;
+    text-align: center;
+}
+.genreButton button {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #5800FF;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.seeDetail a {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 460px) {
+    .swiperPopularImg {
+        width: 180px;
+        height: 300px;
+        border-radius: 15px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiperSlidePopular {
+        width: 180px !important;
+    }
+    .swiperPopularTitle h3 {
+        color: white;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .top-airing {
+        margin-top: 50px;
+    }
+    .popular {
+        margin-top: 50px;
+    }
+    .recent-released {
+        margin-top: 50px;
+    }
+    .movies {
+        margin-top: 50px;
+    }
+    /* .genres {
+        margin-top: 50px;
+    } */
+}
+
+@media screen and (max-width: 576px) {
+    .swiperTopAiringDesc h3 {
+        font-size: 5px;
+        font-weight: 300;
+    }
+    .swiperTopAiringDesc h1 {
+        font-size: 15px !important;
+        font-weight: 600;
+    }
+
+    .top-airing {
+        margin-top: 50px;
+    }
+    .popular {
+        margin-top: 50px;
+    }
+    .recent-released {
+        margin-top: 50px;
+    }
+    .movies {
+        margin-top: 50px;
+    }
+    /* .genres {
+        margin-top: 50px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .slide-show .swiperSlideshowDesc h1 {
+        font-size: 30px;
+    }
+    .slide-show .swiperSlideshowDesc p {
+        font-size: 10px;
+    }
+
+    .top-airing {
+        margin-top: 50px;
+    }
+    .popular {
+        margin-top: 50px;
+    }
+    .recent-released {
+        margin-top: 50px;
+    }
+    .movies {
+        margin-top: 50px;
+    }
+    .recent-released-genre {
+        display: none;
+    }
+
+    .phone-genres {
+        height: 300px;
+        overflow: auto;
+    }
+    .phone-genres h4 {
+        color: white;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .swiperTopAiringDesc h3 {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .swiperTopAiringDesc h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .top-airing {
+        margin-top: 50px;
+    }
+    .popular {
+        margin-top: 50px;
+    }
+    .recent-released {
+        margin-top: 50px;
+    }
+    .movies {
+        margin-top: 50px;
+    }
+    .genres {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .phone-genres {
+        display: none;
+    }
+}
