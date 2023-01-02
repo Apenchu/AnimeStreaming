@@ -6,6 +6,11 @@ body {
     color: white;
 }
 
+html body a {
+    color: white;
+    text-decoration: none;
+}
+
 .navbar {
     background-color: black !important;
     position: fixed;
