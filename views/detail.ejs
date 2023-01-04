@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <script type='text/javascript' src='//pl18220095.highcpmrevenuenetwork.com/e2/3f/fb/e23ffb459e4b93dea04ac95f38ed75ce.js'></script>
+
     <link rel="stylesheet" href="css/detail.css">
   </head>
   <body>
@@ -16,24 +18,24 @@
             <div class="container-fluid d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <p class="nav-link" aria-current="page" href="#"><a href="">AnimeARK</a></p>
+                        <p class="nav-link" aria-current="page" href="#">AnimeARK</p>
                     </li>
                 </ul>
                 <form class="d-flex" role="search" action="/searchAnime" method="post">
-                    <a href=""><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search"></a>
-                    <a href=""><button type="submit"><i class="bi bi-search"></i></button></a>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                    <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <section class="detail">
+    <section class="detail" id="nontonAnime">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="imgCard d-flex align-items-end justify-content-center" style="background-image: url('<%= data.animeImg %>');">
                         <form action="/watch" method="post">
-                            <a href=""><button type="submit">Watch</button></a>
+                            <button type="submit">Watch</button>
                         </form>
                     </div>
                 </div>
@@ -62,38 +64,13 @@
                             <input type="hidden" name="detailId" value="<%= detailId %>">
                             <input type="hidden" name="episodeId" value="<%= e.episodeId %>">
                             <input type="hidden" name="episodeNum" value="<%= e.episodeNum %>">
-                            <a href=""><button type="submit"><%= e.episodeNum %></button></a>
+                            <button type="submit"><%= e.episodeNum %></button>
                         </form>
                     </div>
                 <% }) %> 
             </div>
         </div>
     </section>
-
-    <!-- <section class="similiar-anime">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h4>Similiar Anime</h4>
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-3 myCard">
-                            <div class="swiper-slide swiperSlidePopular">
-                                <div class="swiperPopularImg d-flex align-items-end justify-content-center" style="background-image: url('img/slideshow1.jpg);">
-                                    <form action="/detail" method="post">
-                                        <input type="hidden" name="detailId" value="">
-                                        <button type="submit">See</button>
-                                    </form>
-                                </div>
-                                <div class="swiperPopularTitle">
-                                    <h3>One Piece</h3>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <script src="js/index.js"></script>
     </body>

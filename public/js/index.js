@@ -7,6 +7,7 @@ const swiper_slide_show = new Swiper('.swiper-slideshow', {
     },
     scrollbar: {
         el: '.swiper-scrollbar',
+        hide: true,
     },
 });
 

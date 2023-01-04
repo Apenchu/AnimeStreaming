@@ -19,12 +19,12 @@
             <div class="container-fluid d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <p class="nav-link" aria-current="page" href="#"><a href="">AnimeARK</a></p>
+                        <p class="nav-link" aria-current="page" href="#">AnimeARK</p>
                     </li>
                 </ul>
                 <form class="d-flex" role="search" action="/searchAnime" method="post">
-                    <a href=""><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search"></a>
-                    <a href=""><button type="submit"><i class="bi bi-search"></i></button></a>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                    <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
         </div>
@@ -89,7 +89,7 @@
                                             <input type="hidden" name="detailId" value="<%= e.animeId %>">
                                             <input type="hidden" name="episodeId" value="<%= e.episodeId %>">
                                             <input type="hidden" name="episodeNum" value="<%= e.episodeNum %>">
-                                            <a href=""><button type="submit">Watch</button></a>
+                                            <button type="submit">Watch</button>
                                         </form>
                                     </div>
                                     <div class="swiperPopularTitle">
@@ -109,7 +109,7 @@
                                 <form action="/genre" method="post">
                                     <input type="hidden" name="genre" value="<%= e.genre %>">
                                     <input type="hidden" name="title" value="<%= e.title %>">
-                                    <a href=""><button type="submit"><%= e.title %></button></a>
+                                    <button type="submit"><%= e.title %></button>
                                 </form>
                             </div>
                         <%  }); %> 
@@ -129,7 +129,7 @@
                             <div class="swiperPopularImg d-flex align-items-end justify-content-center" style="background-image: url('<%= e.animeImg %>');">
                                 <form action="/detail" method="post">
                                     <input type="hidden" name="detailId" value="<%= e.animeId %>">
-                                    <a href=""><button type="submit">See</button></a>
+                                    <button type="submit">See</button>
                                 </form>
                             </div>
                             <div class="swiperPopularTitle d-flex justify-content-center">
@@ -153,7 +153,7 @@
                             <div class="swiperPopularImg d-flex align-items-end justify-content-center" style="background-image: url('<%= e.animeImg %>');">
                                 <form action="/detail" method="post">
                                     <input type="hidden" name="detailId" value="<%= e.animeId %>">
-                                    <a href=""><button type="submit">See</button></a>
+                                    <button type="submit">See</button>
                                 </form>
                             </div>
                             <div class="swiperPopularTitle d-flex justify-content-center">
@@ -177,7 +177,7 @@
                             <div class="swiperPopularImg d-flex align-items-end justify-content-center" style="background-image: url('<%= e.animeImg %>');">
                                 <form action="/detail" method="post">
                                     <input type="hidden" name="detailId" value="<%= e.animeId %>">
-                                    <a href=""><button type="submit">See</button></a>
+                                    <button type="submit">See</button>
                                 </form>
                             </div>
                             <div class="swiperPopularTitle d-flex justify-content-center">
@@ -200,7 +200,7 @@
                         <form action="/genre" method="post">
                             <input type="hidden" name="genre" value="<%= e.genre %>">
                             <input type="hidden" name="title" value="<%= e.title %>">
-                            <a href=""><button type="submit"><%= e.title %></button></a>
+                            <button type="submit"><%= e.title %></button>
                         </form>
                     </div>
                 <%  }); %> 
